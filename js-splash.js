@@ -1,0 +1,1 @@
+dist/js-splash.min.js
