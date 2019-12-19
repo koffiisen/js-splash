@@ -25,51 +25,63 @@
 
 ### fromText
 
+\#codepen = [https://codepen.io/koffiisen/pen/YzPZpBx][17]
+
 #### Parameters
 
--   `text` **[String][17]** 
--   `duration` **[Number][18]**  (optional, default `3000`)
+-   `text` **[String][18]** 
+-   `duration` **[Number][19]**  (optional, default `3000`)
 -   `option` **[Object][15]**  (optional, default `{}`)
 
 ### fromHtml
 
+\#codepen = [https://codepen.io/koffiisen/pen/YzPZpBx][17]
+
 #### Parameters
 
--   `html` **[String][17]** => Ex: <h3 style='color: #e0a800'>CUSTOM SPLASH</h3>
--   `duration` **[Number][18]**  (optional, default `3000`)
+-   `html` **[String][18]** => Ex: <h3 style='color: #e0a800'>CUSTOM SPLASH</h3>
+-   `duration` **[Number][19]**  (optional, default `3000`)
 -   `option` **[Object][15]**  (optional, default `{}`)
 
 ### fromImage
 
+\#codepen = [https://codepen.io/koffiisen/pen/xxbqgbg][20]
+
 #### Parameters
 
--   `image` **[String][17]** => url | base64 => based on html <img>
--   `duration` **[Number][18]**  (optional, default `3000`)
+-   `image` **[String][18]** => url | base64 => based on html <img>
+-   `duration` **[Number][19]**  (optional, default `3000`)
 -   `option` **[Object][15]**  (optional, default `{}`)
 
 ### fromCustomNode
 
+\#codepen = [https://codepen.io/koffiisen/pen/PowpWqd][21]
+
 #### Parameters
 
--   `node` **[Node][19]** => Ex: document.createElement('div');
--   `duration` **[Number][18]**  (optional, default `3000`)
+-   `node` **[Node][22]** => Ex: document.createElement('div');
+-   `duration` **[Number][19]**  (optional, default `3000`)
 -   `option` **[Object][15]**  (optional, default `{}`)
 
 ### fromCSSAnimation
 
+\#codepen = [https://codepen.io/koffiisen/pen/wvBJgKR][23]
+
 #### Parameters
 
--   `css_file` **[String][17]** => custom-anim.css
--   `html` **[String][17]** => Ex : <div id="loader-wrapper"><div id="loader"></div></div>
--   `remove_css` **[boolean][20]**  (optional, default `true`)
--   `duration` **[number][18]**  (optional, default `3000`)
+-   `css_file` **[String][18]** => custom-anim.css
+-   `html` **[String][18]** => Ex : <div id="loader-wrapper"><div id="loader"></div></div>
+-   `remove_css` **[boolean][24]**  (optional, default `true`)
+-   `duration` **[number][19]**  (optional, default `3000`)
 
 ### indeterminateLoad
 
+\#codepen = [https://codepen.io/koffiisen/pen/OJPpWMa][25]
+
 #### Parameters
 
--   `splash` **[Function][21]** 
--   `callback` **[Function][21]** 
+-   `splash` **[Function][26]** 
+-   `callback` **[Function][26]** 
 
 Returns **any** 
 
@@ -105,12 +117,22 @@ Returns **any**
 
 [16]: https://image.png"
 
-[17]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[17]: https://codepen.io/koffiisen/pen/YzPZpBx
 
-[18]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[18]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
-[19]: https://developer.mozilla.org/docs/Web/API/Node/nextSibling
+[19]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-[20]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[20]: https://codepen.io/koffiisen/pen/xxbqgbg
 
-[21]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+[21]: https://codepen.io/koffiisen/pen/PowpWqd
+
+[22]: https://developer.mozilla.org/docs/Web/API/Node/nextSibling
+
+[23]: https://codepen.io/koffiisen/pen/wvBJgKR
+
+[24]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[25]: https://codepen.io/koffiisen/pen/OJPpWMa
+
+[26]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
