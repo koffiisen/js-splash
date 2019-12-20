@@ -28,7 +28,7 @@
 </div>
 <footer style="position: absolute; bottom: 2px; font-weight: 500; font-size: 32px; float: right;right: 0"><a href="https://github.com/koffiisen/js-splash" target="_blank">Documentation</a></footer>
 
-<script src="../js-splash.js"></script>
+<script src="/dist/js-splash.min.js"></script>
 <script>
     var splash = new Splash({background: 'black'}); // or var splash = new Splash();
     /*splash.fromText("SPLASH SCREEN", 5000, {
@@ -83,7 +83,6 @@
 
     splash.indeterminateLoad(indeterminate, function (callback) {
         var stop = callback;
-        console.log(self);
         setTimeout(function () {
             console.log("stop execute");
             stop();
