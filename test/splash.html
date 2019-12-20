@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>Title</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <h1>What is Lorem Ipsum?</h1><br>
+    <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+    industry's
+    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+    type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+    Lorem Ipsum.
+</div>
+<footer style="position: absolute; bottom: 2px; font-weight: 500; font-size: 32px; float: right;right: 0"><a href="https://github.com/koffiisen/js-splash" target="_blank">Documentation</a></footer>
+
+<script src="../js-splash.js"></script>
+<script>
+    var splash = new Splash({background: 'black'}); // or var splash = new Splash();
+    /*splash.fromText("SPLASH SCREEN", 5000, {
+        color: 'red',
+        'font-family': 'fantasy'
+    });*/
+
+    /*splash.fromImage("https://s3.amazonaws.com/cdn.wp.m4ecnet/wp-content/uploads/2018/06/05041237/GitHub-logo-2-imagen.jpg", 5000, {
+        width: '120px',
+        height: '120px',
+        'border-radius': '50%'
+    });*/
+
+    /*var custom_node = document.createElement("div");
+    custom_node.style.display = 'grid';
+
+    var text = document.createElement("strong");
+    text.innerText = "SPLASH";
+    text.style.padding = "25px";
+
+    var img = document.createElement("img");
+    img.src = "https://s3.amazonaws.com/cdn.wp.m4ecnet/wp-content/uploads/2018/06/05041237/GitHub-logo-2-imagen.jpg";
+    Object.assign(img.style, {
+        width: '100px',
+        height: '100px',
+        'border-radius': '50%'
+    });
+
+    custom_node.appendChild(img);
+    custom_node.appendChild(text);
+
+    splash.fromCustomNode(custom_node, 5000, {
+        color: 'red',
+        'font-family': 'fantasy'
+    });*/
+
+    //splash.fromHtml("<h3 style='color: #e0a800'>CUSTOM SPLASH</h3>")
+    /* splash.fromCSSAnimation('custom-anim.css',
+         '<div id="loader-wrapper">\n' +
+         '     <div id="loader"></div>\n' +
+         '</div>'
+     );*/
+
+    var indeterminate = () => {
+        //splash.fromText("<h3 style='color: #e0a800'>CUSTOM SPLASH</h3>")
+        splash.fromImage("https://s3.amazonaws.com/cdn.wp.m4ecnet/wp-content/uploads/2018/06/05041237/GitHub-logo-2-imagen.jpg", 5000, {
+            width: '120px',
+            height: '120px',
+            'border-radius': '50%'
+        });
+    };
+
+    splash.indeterminateLoad(indeterminate, function (callback) {
+        var stop = callback;
+        console.log(self);
+        setTimeout(function () {
+            console.log("stop execute");
+            stop();
+        }, 3000);
+    });
+
+
+</script>
+</body>
+</html>
