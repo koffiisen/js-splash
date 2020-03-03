@@ -1,0 +1,40 @@
+{
+  "name": "js-splash",
+  "version": "2.0.0",
+  "description": "Pure and responsive JavaScript splash screen library for animation",
+  "repository": "koffiisen/js-splash",
+  "license": "MIT",
+  "author": {
+    "name": "Koffi Joel ONIPOH",
+    "email": "koffi_joel.onipoh@isen.yncrea.fr"
+  },
+  "scripts": {
+    "start": "npm builder.js"
+  },
+  "keywords": [
+    "splash",
+    "screen",
+    "doc",
+    "docs",
+    "jsdoc",
+    "document",
+    "documentation",
+    "api",
+    "source",
+    "code",
+    "javascript",
+    "markdown",
+    "html",
+    "node",
+    "dustjs",
+    "generate",
+    "build",
+    "comments",
+    "template",
+    "dogma"
+  ],
+  "dependencies": {
+    "docdash": "^1.2.0",
+    "jsdoc": "^3.6.3"
+  }
+}

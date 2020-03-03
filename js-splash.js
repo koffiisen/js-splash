@@ -1,1 +1,0 @@
-let allIn = "dist/js-splash.min.js";

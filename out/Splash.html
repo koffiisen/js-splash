@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>Splash - Documentation</title>
+
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+<label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+
+    <h2><a href="Splash.html">Home</a></h2>
+    <h3>Classes</h3>
+    <ul>
+        <li><a href="Splash.html">Splash</a>
+            <ul class='methods'>
+                <li data-type='method'><a href="Splash.html#fromAnimation">fromAnimation</a></li>
+                <li data-type='method'><a href="Splash.html#fromCSSAnimation">fromCSSAnimation</a></li>
+                <li data-type='method'><a href="Splash.html#fromCustomNode">fromCustomNode</a></li>
+                <li data-type='method'><a href="Splash.html#fromHtml">fromHtml</a></li>
+                <li data-type='method'><a href="Splash.html#fromImage">fromImage</a></li>
+                <li data-type='method'><a href="Splash.html#fromText">fromText</a></li>
+                <li data-type='method'><a href="Splash.html#indeterminateLoad">indeterminateLoad</a></li>
+            </ul>
+        </li>
+    </ul>
+    <h3><a href="global.html">Global</a></h3>
+</nav>
+
+<div id="main">
+
+    <h1 class="page-title">Splash</h1>
+
+
+    <section>
+
+        <header>
+
+            <h2>
+                Splash
+            </h2>
+
+            <div class="class-description usertext">Abstract class representing a splash screen animation.</div>
+
+
+        </header>
+
+        <article>
+
+            <div class="container-overview">
+
+
+                <h2>Constructor</h2>
+
+
+                <h4 class="name" id="Splash"><span class="type-signature"></span>new Splash<span class="signature">(style, anim_options)</span><span
+                        class="type-signature"></span></h4>
+
+
+                <dl class="details">
+
+
+                    <dt class="tag-source">Source:</dt>
+                    <dd class="tag-source">
+                        <ul class="dummy">
+                            <li>
+                                <a href="js-splash-2.0.js.html">js-splash-2.0.js</a>, <a
+                                    href="js-splash-2.0.js.html#line100">line 100</a>
+                            </li>
+                        </ul>
+                    </dd>
+
+
+                    <dt class="tag-version">Version:</dt>
+                    <dd class="tag-version">
+                        <ul class="dummy">
+                            <li>2.0</li>
+                        </ul>
+                    </dd>
+
+
+                    <dt class="tag-author">Author:</dt>
+                    <dd class="tag-author">
+                        <ul>
+                            <li><a href="mailto:koffi_joel.onipoh@isen.yncrea.fr">Koffi Joel ONIPOH</a></li>
+                        </ul>
+                    </dd>
+
+
+                    <dt class="tag-copyright">Copyright:</dt>
+                    <dd class="tag-copyright">
+                        <ul class="dummy">
+                            <li>© 2019-2020</li>
+                        </ul>
+                    </dd>
+
+
+                </dl>
+
+
+                <h5>Examples</h5>
+
+                <p class="code-caption">Get started - Create instance example</p>
+
+                <pre class="prettyprint"><code>// Instance
+var splash = new Splash()</code></pre>
+
+                <pre class="prettyprint"><code>// Or instance with custom parameter
+var splash = new Splash({background: 'rgba(0, 0, 0, 0.7)'}, {
+        use: true,
+        start: FancyAnimation.moveIn,
+        end: FancyAnimation.rubberBand
+    });</code></pre>
+
+
+                <h5>Parameters:</h5>
+
+
+                <table class="params">
+                    <thead>
+                    <tr>
+
+                        <th>Name</th>
+
+
+                        <th>Type</th>
+
+
+                        <th class="last">Description</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+
+                    <tr>
+
+                        <td class="name"><code>style</code></td>
+
+
+                        <td class="type">
+
+
+                            <span class="param-type"><a href="global.html#styler">styler</a></span>
+
+
+                        </td>
+
+
+                        <td class="description last"></td>
+                    </tr>
+
+
+                    <tr>
+
+                        <td class="name"><code>anim_options</code></td>
+
+
+                        <td class="type">
+
+
+                            <span class="param-type"><a href="global.html#animator">animator</a></span>
+
+
+                        </td>
+
+
+                        <td class="description last"></td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+
+
+            </div>
+
+
+            <h3 class="subsection-title">Methods</h3>
+
+
+            <h4 class="name" id="fromAnimation"><span class="type-signature"></span>fromAnimation<span
+                    class="signature">(animation, animation_time, options)</span><span class="type-signature"></span>
+            </h4>
+
+
+            <dl class="details">
+
+
+                <dt class="tag-source">Source:</dt>
+                <dd class="tag-source">
+                    <ul class="dummy">
+                        <li>
+                            <a href="js-splash-2.0.js.html">js-splash-2.0.js</a>, <a
+                                href="js-splash-2.0.js.html#line356">line 356</a>
+                        </li>
+                    </ul>
+                </dd>
+
+
+                <dt class="tag-since">Since:</dt>
+                <dd class="tag-since">
+                    <ul class="dummy">
+                        <li>2.0</li>
+                    </ul>
+                </dd>
+
+
+            </dl>
+
+
+            <h5>Example</h5>
+
+            <p class="code-caption">Pre build svg animation from <a href="global.html#SVGAnimation">SVGAnimation</a></p>
+
+            <pre class="prettyprint"><code>// sample use
+splash.fromAnimation(SVGAnimation.Rotate, 3000, {background: 'transparent'});</code></pre>
+
+
+            <h5>Parameters:</h5>
+
+
+            <table class="params">
+                <thead>
+                <tr>
+
+                    <th>Name</th>
+
+
+                    <th>Type</th>
+
+
+                    <th class="last">Description</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+
+                <tr>
+
+                    <td class="name"><code>animation</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type"><a href="global.html#SVGAnimation">SVGAnimation</a></span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>animation_time</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">Number</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>options</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type"><a href="global.html#styler">styler</a></span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                </tbody>
+            </table>
+
+
+            <h4 class="name" id="fromCSSAnimation"><span class="type-signature"></span>fromCSSAnimation<span
+                    class="signature">(css_file, html, remove_css, duration)</span><span class="type-signature"></span>
+            </h4>
+
+
+            <dl class="details">
+
+
+                <dt class="tag-source">Source:</dt>
+                <dd class="tag-source">
+                    <ul class="dummy">
+                        <li>
+                            <a href="js-splash-2.0.js.html">js-splash-2.0.js</a>, <a
+                                href="js-splash-2.0.js.html#line277">line 277</a>
+                        </li>
+                    </ul>
+                </dd>
+
+
+            </dl>
+
+
+            <div class="description usertext">
+                #codepen = https://codepen.io/koffiisen/pen/wvBJgKR
+            </div>
+
+
+            <h5>Example</h5>
+
+            <pre class="prettyprint"><code>splash.fromCSSAnimation("custom-anim.css","&lt;div id="loader-wrapper">&lt;div id="loader">&lt;/div>&lt;/div>");</code></pre>
+
+
+            <h5>Parameters:</h5>
+
+
+            <table class="params">
+                <thead>
+                <tr>
+
+                    <th>Name</th>
+
+
+                    <th>Type</th>
+
+
+                    <th class="last">Description</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+
+                <tr>
+
+                    <td class="name"><code>css_file</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">String</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>html</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">String</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>remove_css</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">boolean</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>duration</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">number</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                </tbody>
+            </table>
+
+
+            <h4 class="name" id="fromCustomNode"><span class="type-signature"></span>fromCustomNode<span
+                    class="signature">(node, duration, option)</span><span class="type-signature"></span></h4>
+
+
+            <dl class="details">
+
+
+                <dt class="tag-source">Source:</dt>
+                <dd class="tag-source">
+                    <ul class="dummy">
+                        <li>
+                            <a href="js-splash-2.0.js.html">js-splash-2.0.js</a>, <a
+                                href="js-splash-2.0.js.html#line262">line 262</a>
+                        </li>
+                    </ul>
+                </dd>
+
+
+            </dl>
+
+
+            <h5>Example</h5>
+
+            <pre class="prettyprint"><code>var custom_node = document.createElement("div");
+ custom_node.style.display = 'grid';
+
+ var text = document.createElement("strong");
+ text.innerText = "SPLASH";
+ text.style.padding = "25px";
+
+ var img = document.createElement("img");
+ img.src = "https://s3.amazonaws.com/cdn.wp.m4ecnet/wp-content/uploads/2018/06/05041237/GitHub-logo-2-imagen.jpg";
+ Object.assign(img.style, {
+                width: '100px',
+                height: '100px',
+                'border-radius': '50%'
+            });
+
+ custom_node.appendChild(img);
+ custom_node.appendChild(text);
+
+ splash.fromCustomNode(custom_node, 5000, {
+                color: 'red',
+                'font-family': 'fantasy'
+            });</code></pre>
+
+
+            <h5>Parameters:</h5>
+
+
+            <table class="params">
+                <thead>
+                <tr>
+
+                    <th>Name</th>
+
+
+                    <th>Type</th>
+
+
+                    <th class="last">Description</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+
+                <tr>
+
+                    <td class="name"><code>node</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">Node</span>
+
+
+                    </td>
+
+
+                    <td class="description last">=> Ex: document.createElement('div');</td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>duration</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">Number</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>option</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">Object</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                </tbody>
+            </table>
+
+
+            <h4 class="name" id="fromHtml"><span class="type-signature"></span>fromHtml<span class="signature">(html, duration, option)</span><span
+                    class="type-signature"></span></h4>
+
+
+            <dl class="details">
+
+
+                <dt class="tag-source">Source:</dt>
+                <dd class="tag-source">
+                    <ul class="dummy">
+                        <li>
+                            <a href="js-splash-2.0.js.html">js-splash-2.0.js</a>, <a
+                                href="js-splash-2.0.js.html#line200">line 200</a>
+                        </li>
+                    </ul>
+                </dd>
+
+
+            </dl>
+
+
+            <h5>Examples</h5>
+
+            <pre class="prettyprint"><code>// default call
+splash.fromHtml("&lt;h3 style='color: #e0a800'>HTML SPLASH&lt;/h3>");</code></pre>
+
+            <pre class="prettyprint"><code>// or with custom parameter
+splash.fromText("&lt;h3>HTML SPLASH&lt;/h3>", 5000, {
+        color: 'red',
+        'font-family': 'fantasy'
+    })</code></pre>
+
+
+            <h5>Parameters:</h5>
+
+
+            <table class="params">
+                <thead>
+                <tr>
+
+                    <th>Name</th>
+
+
+                    <th>Type</th>
+
+
+                    <th class="last">Description</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+
+                <tr>
+
+                    <td class="name"><code>html</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">String</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>duration</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">Number</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>option</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">Object</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                </tbody>
+            </table>
+
+
+            <h4 class="name" id="fromImage"><span class="type-signature"></span>fromImage<span class="signature">(image, duration, option)</span><span
+                    class="type-signature"></span></h4>
+
+
+            <dl class="details">
+
+
+                <dt class="tag-source">Source:</dt>
+                <dd class="tag-source">
+                    <ul class="dummy">
+                        <li>
+                            <a href="js-splash-2.0.js.html">js-splash-2.0.js</a>, <a
+                                href="js-splash-2.0.js.html#line222">line 222</a>
+                        </li>
+                    </ul>
+                </dd>
+
+
+            </dl>
+
+
+            <h5>Example</h5>
+
+            <pre class="prettyprint"><code>//=> url | base64 => based on html &lt;img>
+splash.fromImage("https://s3.amazonaws.com/cdn.wp.m4ecnet/wp-content/uploads/2018/06/05041237/GitHub-logo-2-imagen.jpg", 5000, {
+    width: '130px',
+    height: '130px',
+    'border-radius': '20%'
+    });</code></pre>
+
+
+            <h5>Parameters:</h5>
+
+
+            <table class="params">
+                <thead>
+                <tr>
+
+                    <th>Name</th>
+
+
+                    <th>Type</th>
+
+
+                    <th class="last">Description</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+
+                <tr>
+
+                    <td class="name"><code>image</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">String</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>duration</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">Number</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>option</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">Object</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                </tbody>
+            </table>
+
+
+            <h4 class="name" id="fromText"><span class="type-signature"></span>fromText<span class="signature">(text, duration, option)</span><span
+                    class="type-signature"></span></h4>
+
+
+            <dl class="details">
+
+
+                <dt class="tag-source">Source:</dt>
+                <dd class="tag-source">
+                    <ul class="dummy">
+                        <li>
+                            <a href="js-splash-2.0.js.html">js-splash-2.0.js</a>, <a
+                                href="js-splash-2.0.js.html#line176">line 176</a>
+                        </li>
+                    </ul>
+                </dd>
+
+
+            </dl>
+
+
+            <h5>Examples</h5>
+
+            <pre class="prettyprint"><code>// default call
+splash.fromText("MY SPLAH SCREEN");</code></pre>
+
+            <pre class="prettyprint"><code>// or with custom parameter
+splash.fromText("SPLASH SCREEN", 5000, {
+        color: 'red',
+        'font-family': 'fantasy'
+    })</code></pre>
+
+
+            <h5>Parameters:</h5>
+
+
+            <table class="params">
+                <thead>
+                <tr>
+
+                    <th>Name</th>
+
+
+                    <th>Type</th>
+
+
+                    <th class="last">Description</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+
+                <tr>
+
+                    <td class="name"><code>text</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">String</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>duration</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">Number</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>option</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">Object</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                </tbody>
+            </table>
+
+
+            <h4 class="name" id="indeterminateLoad"><span class="type-signature"></span>indeterminateLoad<span
+                    class="signature">(splash, callback)</span><span class="type-signature"> &rarr; {function}</span>
+            </h4>
+
+
+            <dl class="details">
+
+
+                <dt class="tag-source">Source:</dt>
+                <dd class="tag-source">
+                    <ul class="dummy">
+                        <li>
+                            <a href="js-splash-2.0.js.html">js-splash-2.0.js</a>, <a
+                                href="js-splash-2.0.js.html#line325">line 325</a>
+                        </li>
+                    </ul>
+                </dd>
+
+
+            </dl>
+
+
+            <h5>Example</h5>
+
+            <pre class="prettyprint"><code>var indeterminate = () => {
+    //splash.fromText("&lt;h3 style='color: #e0a800'>CUSTOM SPLASH&lt;/h3>")
+    splash.fromCSSAnimation('custom-anim.css',
+        '&lt;div id="loader-wrapper">\n' +
+        '     &lt;div id="loader">&lt;/div>\n' +
+        '&lt;/div>', false
+    );
+};
+
+ splash.indeterminateLoad(indeterminate, function (callback) {
+    var stop = callback;
+    console.log(self);
+    setTimeout(function () {
+        console.log("stop execute");
+        stop();
+    }, 12000);
+});</code></pre>
+
+
+            <h5>Parameters:</h5>
+
+
+            <table class="params">
+                <thead>
+                <tr>
+
+                    <th>Name</th>
+
+
+                    <th>Type</th>
+
+
+                    <th class="last">Description</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+
+                <tr>
+
+                    <td class="name"><code>splash</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">function</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                <tr>
+
+                    <td class="name"><code>callback</code></td>
+
+
+                    <td class="type">
+
+
+                        <span class="param-type">function</span>
+
+
+                    </td>
+
+
+                    <td class="description last"></td>
+                </tr>
+
+
+                </tbody>
+            </table>
+
+
+            <h5>Returns:</h5>
+
+
+            <div class="param-desc">
+                - to stop animation
+            </div>
+
+
+            <dl class="param-type">
+                <dt>
+                    Type
+                </dt>
+                <dd>
+
+                    <span class="param-type">function</span>
+
+
+                </dd>
+            </dl>
+
+
+        </article>
+
+    </section>
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Tue Mar 03 2020 18:50:11
+    GMT+0100 (GMT+01:00) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+<script src="dist/js-splash-2.0.min.js"></script>
+<script>
+    var splash = new Splash({background: 'rgba(0,0,0,.6)'});
+    splash.fromAnimation(SVGAnimation.FillRotate, 3000, {background: 'transparent'});
+</script>
+
+</body>
+</html>
