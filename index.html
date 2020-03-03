@@ -120,13 +120,43 @@
 
     var RANDOM_SPLASH = [
         function () {
+            splash.fromAnimation(SVGAnimation.Bolt)
+        },
+        function () {
             splash.fromHtml('<h1 style="color: #e0a800">JS SPLASH</h1>');
+        },
+        function () {
+            splash.fromImage("out/logo.png", 2200, {
+                width: '130px',
+                height: '130px',
+            });
         },
         function () {
             splash.fromAnimation(SVGAnimation.FillRotate)
         },
         function () {
-            splash.fromAnimation(SVGAnimation.Bolt)
+            var custom_node = document.createElement("div");
+            custom_node.style.display = 'grid';
+
+            var text = document.createElement("strong");
+            text.innerText = "JS SPLASH";
+            text.style.padding = "25px";
+
+            var img = document.createElement("img");
+            img.src = "out/logo.png";
+            Object.assign(img.style, {
+                width: '100px',
+                height: '100px',
+                'border-radius': '50%'
+            });
+
+            custom_node.appendChild(img);
+            custom_node.appendChild(text);
+
+            splash.fromCustomNode(custom_node, 5000, {
+                color: '#ccaaff',
+                'font-family': 'fantasy'
+            });
         },
         function () {
             splash.fromAnimation(SVGAnimation.CenterBar)
